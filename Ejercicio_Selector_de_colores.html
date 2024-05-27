@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ejercicio Selector de Colores</title>
+    <link rel="stylesheet" href="./Ejercicio_Selector_de_colores.css">
+    </head>
+<body id="fondo" class="flex flex-col items-center">
+    <section class="bg-slate-700 text-sm text-white font-bold text-3xl flex flex-col items-center pb-4 my-2 w-5/6 rounded-xl" >
+        <h1 class="text-3xl">Ejercicio Selector de Colores</h1>
+        <h1 class="text-2xl">Elige el color de fondo de tu preferecia haciendo click en el rectangulo abajo </h1>
+        <input type="color" name="Colores" value="#000000" id="colores">
+    </section>    
+    <section class="bg-slate-700 text-sm  text-white font-bold text-lg flex flex-col items-center gap-4 w-5/6 h-[500px] rounded-xl">
+        <h1 class="text-3xl text-white">Ejercicio Lista de Tareas</h1>
+        <div id="cuadro">
+            <input type="date"  id="fecha" class=" outline-none shadow-inner shadow-black/100 px-4 text-lg text-black w-[300px] h-[45px] rounded-xl">
+            <input type="time"  id="hora" value="00:00" class=" outline-none shadow-inner shadow-black/100 px-4 text-lg text-black w-[300px] h-[45px] rounded-xl">
+            <input type="text" placeholder="Agrega una tarea"  id="tarea" class="outline-none shadow-inner shadow-black/100 px-4 text-lg text-black w-[300px] h-[45px] rounded-xl">
+        </div>
+        <div class="flex flex-row gap-2">
+        <button id="enviar">Agregar</button>
+        <button id="limpiar">Limpiar</button>
+        </div>
+        <h1 class="text-3xl text-white underline">Listado</h1>
+        <p id="listado"></p>
+    </section>    
+        
+    
+        
+</body>
+<script src="./Ejercicio_Selector_de_Colores.js"></script>
+</html>
